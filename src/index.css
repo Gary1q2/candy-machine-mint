@@ -1,14 +1,87 @@
+#main {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 800px;
+  width: 1800px;
+}
 
+#mintBoardContainer {
+  position: absolute;
+  left: 520px;
+  top: 140px;
+
+  height: 700px;
+  width: 700px;
+}
+
+#iceberg {
+  position: absolute;
+  left: 90px;
+  bottom: -100px;
+  width: 1700px;
+  height: 400px;
+}
+
+#board {
+  position: absolute;
+  width: 500px;
+}
+
+#population {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 100px;
+}
+
+#root {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+
+  font-size: 40px;
+}
+
+#walletNotConnected {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 300px;
+  border: 2px solid black;
+}
+
+#connectButton {
+  position: absolute;
+  left: 70px;
+  top: 200px;
+
+  font-size: 40px;
+  font-family: Jupiterc;
+}
+
+#mintButton {
+
+  font-size: 50px;
+  font-family: Jupiterc;
+}
+
+
+@font-face { font-family: Jupiterc; src: url('jupiterc.ttf'); }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, Jupiterc, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(99, 146, 255);
+  overflow-y: hidden;
+  background-color: rgb(89, 136, 229);
   color: #FFFFFF;
+
+  image-rendering: pixelated;
 }
 
 code {

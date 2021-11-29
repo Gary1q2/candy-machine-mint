@@ -22,6 +22,8 @@ import {
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 
+import background from "./background.png";
+
 const treasury = new anchor.web3.PublicKey(
   process.env.REACT_APP_TREASURY_ADDRESS!
 );
