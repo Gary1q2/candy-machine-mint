@@ -166,18 +166,18 @@ const Home = (props: HomeProps) => {
   ]);
 
   return (
-    <main>
-      {wallet && (
-        <div>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</div>
-      )}
+    <main id="mainContainer">
+        {wallet && (
+          <div id="walletID">Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</div>
+        )}
 
-      {wallet && <div id="imgay">Balance: {(balance || 0).toLocaleString()} SOL</div>}
-
-      {wallet && <div>Total Available: {itemsAvailable}</div>}
-
-      {wallet && <div>Redeemed: {itemsRedeemed}</div>}
-
-      {wallet && <div>Remaining: {itemsRemaining}</div>}
+        {wallet && <div id="totalAvailable">Total Available: {itemsAvailable}</div>}
+        
+        {/*
+          {wallet && <div id="balance">Balance: {(balance || 0).toLocaleString()} SOL</div>}
+          {wallet && <div id="redeemed">Redeemed: {itemsRedeemed}</div>}
+          {wallet && <div id="remaining">Remaining: {itemsRemaining}</div>}
+        */}
 
       <MintContainer>
         {!wallet ? (

@@ -13,6 +13,8 @@
 
   height: 700px;
   width: 700px;
+
+  z-index: 7; /*Based off penguin*/
 }
 
 #iceberg {
@@ -21,6 +23,7 @@
   bottom: -100px;
   width: 1700px;
   height: 400px;
+  z-index: 0;
 }
 
 #board {
@@ -34,6 +37,21 @@
   margin-right: auto;
   text-align: center;
   font-size: 100px;
+}
+
+#walkArea {
+  position: absolute;
+  left: 300px;
+  top: 500px;
+
+  width: 1300px;
+  height: 300px;
+}
+
+.penguin {
+  position: absolute;
+  width: 70px;
+
 }
 
 #root {
@@ -54,17 +72,68 @@
 
 #connectButton {
   position: absolute;
-  left: 70px;
-  top: 200px;
+  left: 65px;
+  top: 245px;
 
+  height: 50px;
+  width: 240px;
   font-size: 40px;
   font-family: Jupiterc;
 }
 
-#mintButton {
 
-  font-size: 50px;
+
+
+#mintButton {
+  position: absolute;
+  left: 100px;
+  top: 250px;
+
+  height: 50px;
+  width: 155px;
+  font-size: 40px;
   font-family: Jupiterc;
+}
+#walletID{
+  position: absolute;
+  left: 75px;
+  top: 40px;
+
+  width: 230px;
+  border: 2px solid black;
+}
+
+#balance {
+  position: absolute;
+  left: 0px;
+  top: 90px;
+
+  width: 270px;
+  border: 2px solid black;
+}
+#totalAvailable {
+  position: absolute;
+  left: 0px;
+  top: 140px;
+
+  width: 230px;
+  border: 2px solid black;
+}
+#redeemed {
+  position: absolute;
+  left: 0px;
+  top: 180px;
+
+  width: 230px;
+  border: 2px solid black;
+}
+#remaining {
+  position: absolute;
+  left: 0px;
+  top: 220px;
+
+  width: 230px;
+  border: 2px solid black;
 }
 
 
