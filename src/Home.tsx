@@ -171,10 +171,11 @@ const Home = (props: HomeProps) => {
           <div id="walletID">Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</div>
         )}
 
-        {wallet && <div id="totalAvailable">Total Available: {itemsAvailable}</div>}
+        
         
         {/*
           {wallet && <div id="balance">Balance: {(balance || 0).toLocaleString()} SOL</div>}
+          {wallet && <div id="totalAvailable">Total Available: {itemsAvailable}</div>}
           {wallet && <div id="redeemed">Redeemed: {itemsRedeemed}</div>}
           {wallet && <div id="remaining">Remaining: {itemsRemaining}</div>}
         */}
