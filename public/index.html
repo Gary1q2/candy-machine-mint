@@ -31,119 +31,113 @@
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <script src="WalkingPenguin.js"></script>
         <div id="main">
-        <div id="population">Population: 124</div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br>
-        <img id="iceberg" src="iceberg.png" alt="Iceberg">
+            <div id="population">Penguin population: -Connect wallet-</div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br>
+            <img id="iceberg" src="iceberg.png" alt="Iceberg">
 
-        <div id="walkArea">
-            <img id="penguin1" class="penguin" src="penguins/penguin (1).png">
-            <img id="penguin2" class="penguin" src="penguins/penguin (2).png">
-            <img id="penguin3" class="penguin" src="penguins/penguin (3).png">
-            <img id="penguin4" class="penguin" src="penguins/penguin (4).png">
-            <img id="penguin5" class="penguin" src="penguins/penguin (5).png">
-            <img id="penguin6" class="penguin" src="penguins/penguin (6).png">
-            <img id="penguin7" class="penguin" src="penguins/penguin (7).png">
-            <img id="penguin8" class="penguin" src="penguins/penguin (8).png">
-            <img id="penguin9" class="penguin" src="penguins/penguin (9).png">
-            <img id="penguin10" class="penguin" src="penguins/penguin (10).png">
-            <img id="penguin11" class="penguin" src="penguins/penguin (1).png">
-            <img id="penguin12" class="penguin" src="penguins/penguin (2).png">
-            <img id="penguin13" class="penguin" src="penguins/penguin (3).png">
-            <img id="penguin14" class="penguin" src="penguins/penguin (4).png">
-            <img id="penguin15" class="penguin" src="penguins/penguin (5).png">
-            <img id="penguin16" class="penguin" src="penguins/penguin (6).png">
-            <img id="penguin17" class="penguin" src="penguins/penguin (7).png">
-            <img id="penguin18" class="penguin" src="penguins/penguin (8).png">
-            <img id="penguin19" class="penguin" src="penguins/penguin (9).png">
-            <img id="penguin20" class="penguin" src="penguins/penguin (10).png">
-            <img id="penguin21" class="penguin" src="penguins/penguin (1).png">
-            <img id="penguin22" class="penguin" src="penguins/penguin (2).png">
-            <img id="penguin23" class="penguin" src="penguins/penguin (3).png">
-            <img id="penguin24" class="penguin" src="penguins/penguin (4).png">
-            <img id="penguin25" class="penguin" src="penguins/penguin (5).png">
-            <img id="penguin26" class="penguin" src="penguins/penguin (6).png">
-        </div>
-        
+            <div id="walkArea">
+                <img id="penguin1" class="penguin" src="penguins/penguin (1).png">
+                <img id="penguin2" class="penguin" src="penguins/penguin (2).png">
+                <img id="penguin3" class="penguin" src="penguins/penguin (3).png">
+                <img id="penguin4" class="penguin" src="penguins/penguin (4).png">
+                <img id="penguin5" class="penguin" src="penguins/penguin (5).png">
+                <img id="penguin6" class="penguin" src="penguins/penguin (6).png">
+                <img id="penguin7" class="penguin" src="penguins/penguin (7).png">
+                <img id="penguin8" class="penguin" src="penguins/penguin (8).png">
+                <img id="penguin9" class="penguin" src="penguins/penguin (9).png">
+                <img id="penguin10" class="penguin" src="penguins/penguin (10).png">
+                <img id="penguin11" class="penguin" src="penguins/penguin (1).png">
+                <img id="penguin12" class="penguin" src="penguins/penguin (2).png">
+                <img id="penguin13" class="penguin" src="penguins/penguin (3).png">
+                <img id="penguin14" class="penguin" src="penguins/penguin (4).png">
+                <img id="penguin15" class="penguin" src="penguins/penguin (5).png">
+                <img id="penguin16" class="penguin" src="penguins/penguin (6).png">
+                <img id="penguin17" class="penguin" src="penguins/penguin (7).png">
+                <img id="penguin18" class="penguin" src="penguins/penguin (8).png">
+                <img id="penguin19" class="penguin" src="penguins/penguin (9).png">
+                <img id="penguin20" class="penguin" src="penguins/penguin (10).png">
+                <img id="penguin21" class="penguin" src="penguins/penguin (1).png">
+                <img id="penguin22" class="penguin" src="penguins/penguin (2).png">
+                <img id="penguin23" class="penguin" src="penguins/penguin (3).png">
+                <img id="penguin24" class="penguin" src="penguins/penguin (4).png">
+                <img id="penguin25" class="penguin" src="penguins/penguin (5).png">
+                <img id="penguin26" class="penguin" src="penguins/penguin (6).png">
+            </div>
+            
 
-        <script defer>
-            var lastCall, fps;
-            function detectFps() {
-                var delta;
-                if (lastCall) {
-                    delta = (Date.now() - lastCall)/1000;
-                    lastCall = Date.now();
-                    fps = 1/delta;
-                } else {
-                    lastCall = Date.now();
-                    fps = 0;
+            <script defer>
+                var lastCall, fps;
+                function detectFps() {
+                    var delta;
+                    if (lastCall) {
+                        delta = (Date.now() - lastCall)/1000;
+                        lastCall = Date.now();
+                        fps = 1/delta;
+                    } else {
+                        lastCall = Date.now();
+                        fps = 0;
+                    }
                 }
-            }
-            function updatePenguins() {
+                function updatePenguins() {
+                    detectFps();
+                    for (var i = 0; i < penguinArray.length; i++) {
+                        penguinArray[i].doUpdate();
+                    }
+                    requestAnimationFrame(updatePenguins);
+                }
+
+                // Each index is every 10 pixels
+                var boundary = [
+                    [400,500],
+                    [300,500],
+                    [300,600],
+                    [250,650],
+                    [250,700],
+                    [230,1000],
+                    [210,1150],
+                    [200,1150],
+                    [190,1200],
+                    [180,1200],
+                    [50,1200],
+                    [50,1200],
+                    [50,1200],
+                    [50,1200],
+                    [50,1200],
+                    [50,1200],
+                    [50,1150],
+                    [50,1130],
+                    [50,1110],
+                    [50,1100],
+                    [50,1090],
+                    [50,1070],
+                    [50,1050],
+                    [50,1030],
+                    [100,1000],
+                    [100,900],
+                ];
+                var gap = 10;
+                var NUM_PENGUINS = 26;
+
+                var penguinArray = [];
+                for (var i = 0; i < NUM_PENGUINS; i++) {
+                    var penguinObj = document.getElementById(`penguin${i+1}`);
+                    var randomSpeed = 1;//0.33 + Math.random() * 0.66;
+                    var penguin = new WalkingPenguin(boundary, gap, boundary[i][0], boundary[i][1], i*gap, randomSpeed, penguinObj);
+                    penguinArray.push(penguin);
+                }
+                
+                
                 detectFps();
-                for (var i = 0; i < penguinArray.length; i++) {
-                    penguinArray[i].doUpdate();
-                }
                 requestAnimationFrame(updatePenguins);
-            }
 
-            // Each index is every 10 pixels
-            var boundary = [
-                [400,500],
-                [300,500],
-                [300,600],
-                [250,650],
-                [250,700],
-                [230,1000],
-                [210,1150],
-                [200,1150],
-                [190,1200],
-                [180,1200],
-                [50,1200],
-                [50,1200],
-                [50,1200],
-                [50,1200],
-                [50,1200],
-                [50,1200],
-                [50,1150],
-                [50,1130],
-                [50,1110],
-                [50,1100],
-                [50,1090],
-                [50,1070],
-                [50,1050],
-                [50,1030],
-                [100,1000],
-                [100,900],
-            ];
-            var gap = 10;
-            var NUM_PENGUINS = 26;
+            </script>
 
-            var penguinArray = [];
-            for (var i = 0; i < NUM_PENGUINS; i++) {
-                var penguinObj = document.getElementById(`penguin${i+1}`);
-                var randomSpeed = 1;//0.33 + Math.random() * 0.66;
-                var penguin = new WalkingPenguin(boundary, gap, boundary[i][0], boundary[i][1], i*gap, randomSpeed, penguinObj);
-                penguinArray.push(penguin);
-            }
-            
-            
-            detectFps();
-            requestAnimationFrame(updatePenguins);
-
-        </script>
-
-        <div id="mintBoardContainer">
-            <img id="board" src="mintBoard.png" alt="Mint board">
-            <img id="mysteryPenguin" src="mysteryPenguin.gif" alt="Mystery">
-            <div id="root"></div>
-
-
-        </div>
-
-        
-
-        
+            <div id="mintBoardContainer">
+                <img id="board" src="mintBoard.png" alt="Mint board">
+                <img id="mysteryPenguin" src="mysteryPenguin.gif" alt="Mystery">
+                <div id="root"></div>
+            </div>        
         </div>
         
         <!--

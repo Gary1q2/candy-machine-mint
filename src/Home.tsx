@@ -80,6 +80,10 @@ const Home = (props: HomeProps) => {
       setIsSoldOut(itemsRemaining === 0);
       setStartDate(goLiveDate);
       setCandyMachine(candyMachine);
+
+      //console.log("hehe");
+      //console.log(document.getElementById("population"));
+      (document.getElementById("population") as HTMLInputElement).innerHTML = `Population: ${itemsRedeemed}`;
     })();
   };
 
@@ -196,7 +200,7 @@ const Home = (props: HomeProps) => {
               "SOLD OUT"
             ) : isActive ? (
               isMinting ? (
-                <CircularProgress />
+                <CircularProgress id="circularProgress" />
               ) : (
                 "MINT"
               )

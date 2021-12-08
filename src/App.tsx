@@ -59,6 +59,7 @@ const theme = createTheme({
             root: {
                 textTransform: undefined,
                 padding: '12px 16px',
+                textAlign: 'center'
             },
             startIcon: {
                 marginRight: 8,
