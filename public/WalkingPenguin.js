@@ -99,10 +99,10 @@ class WalkingPenguin {
             var random = Math.random();
             if (random < 0.33) {
                 this.vertical = "up";
-                this.verticalTimer = Math.random() * 60;
+                this.verticalTimer = Math.random() * 30;
             } else if (random < 0.66) {
                 this.vertical = "down";
-                this.verticalTimer = Math.random() * 60;
+                this.verticalTimer = Math.random() * 30;
             } else {
                 this.vertical = "none";
             }
@@ -115,7 +115,7 @@ class WalkingPenguin {
     doUpdate() {
 
         // Penguin deciding to stop or not
-        if (this.stopTimer == 0 && Math.random() < 0.001) {
+        if (this.stopTimer == 0 && Math.random() < 0.0025) {
             this.stopTimer = 60 + (Math.random() * 60)*5;
             this.vertical = "none";
         }

@@ -31,6 +31,7 @@
   width: 500px;
 }
 
+
 #population {
   margin-top: 20px;
   margin-left: auto;
@@ -66,7 +67,7 @@
 
 #walletNotConnected {
   position: absolute;
-  top: 60px;
+  top: 65px;
   left: 40px;
   width: 300px;
 }
@@ -85,11 +86,36 @@
 
 #mysteryPenguin {
   position: absolute;
-  left: 190px;
+  left: 150px;
   top: 80px;
   width: 120px;
   z-index: 200;
 }
+
+
+#plus {
+  position: absolute;
+  left: 80px;
+  top: 150px;
+  width: 50px;
+}
+#minus {
+  position: absolute;
+  left: 380px;
+  top: 150px;
+  width: 50px;
+}
+#mintAmount {
+  position: absolute;
+  left: 280px;
+  top: 123px;
+  width: 50px;
+  font-size: 60px;
+  text-align: center;
+  background-color: rgb(188, 139, 83);
+  border: 4px solid rgb(121, 89, 54);
+}
+
 
 
 #circularProgress {
@@ -110,7 +136,7 @@
 #walletID{
   position: absolute;
   left: 75px;
-  top: 60px;
+  top: 65px;
 
   width: 230px;
   /*border: 2px solid black;*/

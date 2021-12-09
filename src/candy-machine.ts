@@ -240,6 +240,13 @@ const getTokenWallet = async (
   )[0];
 };
 
+/**
+ * This literally mints an nft from start to finish!
+ * @param candyMachine 
+ * @param config 
+ * @param payer 
+ * @param treasury 
+ */
 export const mintOneToken = async (
   candyMachine: CandyMachine,
   config: anchor.web3.PublicKey, // feels like this should be part of candyMachine?
@@ -256,7 +263,7 @@ export const mintOneToken = async (
     MintLayout.span
   );
 
-  return await program.rpc.mintNft({
+  const answer = {
     accounts: {
       config,
       candyMachine: candyMachine.id,
@@ -304,7 +311,9 @@ export const mintOneToken = async (
         1
       ),
     ],
-  });
+  }
+
+  return await program.rpc.mintNft(answer);
 }
 
 export const shortenAddress = (address: string, chars = 4): string => {
