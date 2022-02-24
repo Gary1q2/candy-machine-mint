@@ -151,6 +151,12 @@ export const awaitTransactionSignatureConfirmation = async (
   });
 }
 
+
+export const getPopulation = () => {
+  
+}
+
+
 export const getCandyMachineState = async (
   anchorWallet: anchor.Wallet,
   candyMachineId: anchor.web3.PublicKey,

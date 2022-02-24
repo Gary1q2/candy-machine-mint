@@ -24,6 +24,7 @@ import { createTheme, ThemeProvider } from "@material-ui/core";
 
 import background from "./background.png";
 
+
 const treasury = new anchor.web3.PublicKey(
   process.env.REACT_APP_TREASURY_ADDRESS!
 );
@@ -86,22 +87,22 @@ const App = () => {
   );
 
   return (
-      <ThemeProvider theme={theme}>
-        <ConnectionProvider endpoint={endpoint}>
-          <WalletProvider wallets={wallets} autoConnect={true}>
-            <WalletDialogProvider>
-              <Home
-                candyMachineId={candyMachineId}
-                config={config}
-                connection={connection}
-                startDate={startDateSeed}
-                treasury={treasury}
-                txTimeout={txTimeout}
-              />
-            </WalletDialogProvider>
-          </WalletProvider>
-        </ConnectionProvider>
-      </ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <ConnectionProvider endpoint={endpoint}>
+            <WalletProvider wallets={wallets} autoConnect={true}>
+              <WalletDialogProvider>
+                <Home
+                  candyMachineId={candyMachineId}
+                  config={config}
+                  connection={connection}
+                  startDate={startDateSeed}
+                  treasury={treasury}
+                  txTimeout={txTimeout}
+                />
+              </WalletDialogProvider>
+            </WalletProvider>
+          </ConnectionProvider>
+        </ThemeProvider>
   );
 };
 

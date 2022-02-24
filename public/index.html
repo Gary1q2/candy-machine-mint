@@ -1,6 +1,15 @@
     <!DOCTYPE html>
     <html lang="en">
         <head>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-RSBSDNZ1NX"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-RSBSDNZ1NX');
+            </script>
             <meta charset="utf-8" />
             <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,11 +35,19 @@
             -->
             <title>Mint - Cool Penguin Squad</title>
             <link rel="stylesheet" href="style.css">
+
+            <meta property="og:title" content="Mint Island" />
+            <meta property="og:description" content="4444 penguins engaged in Penguin Warz, where players can earn prizes by simply holding!" />
+            <meta property="og:image" content="%PUBLIC_URL%/previewImage.png" />
         </head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <script src="%PUBLIC_URL%/WalkingPenguin.js"></script>
+
+        
+
         <div id="main">
+            <img id="closed" src="%PUBLIC_URL%/closed.png">  
             <div id="population">Penguin population: -Connect wallet-</div>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <br><br>
@@ -98,6 +115,7 @@
                 }
             </script>
 
+
             <div id="mintBoardContainer">
                 <img id="board" src="%PUBLIC_URL%/mintBoard.png" alt="Mint board">
                 <img id="mysteryPenguin" src="%PUBLIC_URL%/mysteryPenguin.gif" alt="Mystery">
@@ -109,7 +127,8 @@
                 <div id="mintAmount">1</div>
 
                 <div id="root"></div>
-            </div>        
+            </div>    
+             
         </div>
         
         <!--

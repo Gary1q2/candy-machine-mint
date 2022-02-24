@@ -27,6 +27,8 @@ const MintContainer = styled.div``; // add your styles here
 
 const MintButton = styled(Button)``; // add your styles here
 
+
+
 export interface HomeProps {
   candyMachineId: anchor.web3.PublicKey;
   config: anchor.web3.PublicKey;
